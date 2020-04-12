@@ -6,7 +6,7 @@
   "publishConfig": {
     "access": "public"
   },
-  "main": "eslintrc.js",
+  "main": "eslintrc.json",
   "peerDependencies": {
     "eslint-config-airbnb-base": "^14.1.0",
     "eslint-config-prettier": "^6.10.1",

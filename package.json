@@ -1,11 +1,16 @@
 {
   "name": "@christoffercarlsson/eslint-config",
-  "version": "0.2.0",
+  "version": "0.3.0",
+  "description": "My ESLint configuration",
   "license": "Unlicense",
-  "repository": "https://github.com/christoffercarlsson/eslint-config",
+  "repository": "git://github.com/christoffercarlsson/eslint-config.git",
   "publishConfig": {
-    "access": "public"
+    "access": "public",
+    "registry": "https://npm.pkg.github.com/"
   },
+  "files": [
+    "eslintrc.json"
+  ],
   "main": "eslintrc.json",
   "peerDependencies": {
     "eslint-config-airbnb-base": "^14.1.0",

@@ -1,6 +1,6 @@
 {
   "name": "@christoffercarlsson/eslint-config",
-  "version": "0.3.0",
+  "version": "0.4.0",
   "description": "My ESLint configuration",
   "license": "Unlicense",
   "repository": "git://github.com/christoffercarlsson/eslint-config.git",
@@ -15,6 +15,7 @@
   "peerDependencies": {
     "eslint-config-airbnb-base": "^14.1.0",
     "eslint-config-prettier": "^6.10.1",
+    "eslint-plugin-fp": "^2.3.0",
     "eslint-plugin-import": "^2.20.2",
     "eslint-plugin-prettier": "^3.1.2"
   }

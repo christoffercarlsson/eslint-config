@@ -8,7 +8,7 @@
   "plugins": ["fp", "import", "prettier"],
   "rules": {
     "fp/no-class": "off",
-    "fp/no-mutation": ["error", { "commonjs": true }],
+    "fp/no-mutation": ["error", { "allowThis": true, "commonjs": true }],
     "fp/no-rest-parameters": "off",
     "fp/no-this": "off",
     "import/extensions": ["error", "always", { "ignorePackages": true }],

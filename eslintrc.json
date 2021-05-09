@@ -4,13 +4,9 @@
     "node": true,
     "es6": true
   },
-  "extends": ["airbnb-base", "plugin:fp/recommended", "prettier"],
-  "plugins": ["fp", "import", "prettier"],
+  "extends": ["prettier", "semistandard"],
+  "plugins": ["import", "prettier"],
   "rules": {
-    "fp/no-class": "off",
-    "fp/no-mutation": ["error", { "allowThis": true, "commonjs": true }],
-    "fp/no-rest-parameters": "off",
-    "fp/no-this": "off",
     "import/extensions": ["error", "always", { "ignorePackages": true }],
     "no-bitwise": "off",
     "no-restricted-syntax": "off",

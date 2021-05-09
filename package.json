@@ -1,6 +1,6 @@
 {
   "name": "@christoffercarlsson/eslint-config",
-  "version": "0.8.0",
+  "version": "0.8.1",
   "description": "My ESLint configuration",
   "license": "Unlicense",
   "repository": "git://github.com/christoffercarlsson/eslint-config.git",
@@ -18,7 +18,6 @@
     "eslint-plugin-import": "^2.22.1",
     "eslint-plugin-node": "^11.1.0",
     "eslint-plugin-prettier": "^3.3.1",
-    "eslint-plugin-promise": "^4.3.1",
-    "eslint-plugin-standard": "^5.0.0"
+    "eslint-plugin-promise": "^4.3.1"
   }
 }

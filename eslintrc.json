@@ -8,8 +8,10 @@
   "plugins": ["import", "prettier"],
   "rules": {
     "import/extensions": ["error", "always", { "ignorePackages": true }],
+    "indent": "off",
     "no-bitwise": "off",
     "no-restricted-syntax": "off",
-    "prettier/prettier": "error"
+    "prettier/prettier": "error",
+    "space-before-function-paren": "off"
   }
 }

@@ -1,6 +1,6 @@
 {
   "name": "@christoffercarlsson/eslint-config",
-  "version": "0.8.1",
+  "version": "0.8.2",
   "description": "My ESLint configuration",
   "license": "Unlicense",
   "repository": "git://github.com/christoffercarlsson/eslint-config.git",
@@ -8,7 +8,9 @@
     "access": "public",
     "registry": "https://npm.pkg.github.com/"
   },
-  "files": ["eslintrc.json"],
+  "files": [
+    "eslintrc.json"
+  ],
   "main": "eslintrc.json",
   "peerDependencies": {
     "eslint": "^7.26.0",

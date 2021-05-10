@@ -1,6 +1,6 @@
 {
   "name": "@christoffercarlsson/eslint-config",
-  "version": "0.8.2",
+  "version": "0.8.3",
   "description": "My ESLint configuration",
   "license": "Unlicense",
   "repository": "git://github.com/christoffercarlsson/eslint-config.git",

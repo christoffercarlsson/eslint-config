@@ -1,0 +1,13 @@
+{
+  "env": {
+    "browser": true,
+    "node": true
+  },
+  "extends": ["standard", "prettier"],
+  "plugins": ["import"],
+  "rules": {
+    "import/extensions": ["error", "always", { "ignorePackages": true }],
+    "no-bitwise": "off",
+    "no-restricted-syntax": "off"
+  }
+}

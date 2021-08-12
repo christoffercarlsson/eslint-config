@@ -1,0 +1,19 @@
+{
+  "name": "eslint-config-cc",
+  "version": "0.0.0",
+  "description": "My personal ESLint configuration",
+  "private": true,
+  "license": "Unlicense",
+  "main": "eslintrc.json",
+  "files": [
+    "eslintrc.json"
+  ],
+  "peerDependencies": {
+    "eslint": "^7.32.0",
+    "eslint-config-prettier": "^8.3.0",
+    "eslint-config-standard": "^16.0.3",
+    "eslint-plugin-import": "^2.24.0",
+    "eslint-plugin-node": "^11.1.0",
+    "eslint-plugin-promise": "^5.1.0"
+  }
+}

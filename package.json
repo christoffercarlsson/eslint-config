@@ -1,9 +1,9 @@
 {
-  "name": "eslint-config-cc",
+  "name": "@christoffercarlsson/eslint-config",
   "version": "0.1.0",
   "description": "My personal ESLint configuration",
-  "private": true,
   "license": "Unlicense",
+  "repository": "git://github.com/christoffercarlsson/eslint-config.git",
   "main": "eslintrc.json",
   "files": [
     "eslintrc.json"

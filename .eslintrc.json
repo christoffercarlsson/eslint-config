@@ -9,5 +9,6 @@
     "import/extensions": ["error", "always", { "ignorePackages": true }],
     "no-bitwise": "off",
     "no-restricted-syntax": "off"
-  }
+  },
+  "root": true
 }

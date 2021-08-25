@@ -4,16 +4,26 @@
   "description": "My personal ESLint configuration",
   "license": "Unlicense",
   "repository": "git://github.com/christoffercarlsson/eslint-config.git",
-  "main": "eslintrc.json",
+  "type": "module",
+  "exports": "./dist/eslintrc.json",
   "files": [
-    "eslintrc.json"
+    "dist/eslintrc.json"
   ],
+  "scripts": {
+    "build": "node scripts/build.js",
+    "prepack": "npm run build"
+  },
   "peerDependencies": {
-    "eslint": "^7.32.0",
+    "eslint": "^7.32.0"
+  },
+  "devDependencies": {
+    "@christoffercarlsson/prettier-config": "^0.5.0",
     "eslint-config-prettier": "^8.3.0",
     "eslint-config-standard": "^16.0.3",
     "eslint-plugin-import": "^2.24.0",
     "eslint-plugin-node": "^11.1.0",
-    "eslint-plugin-promise": "^5.1.0"
+    "eslint-plugin-promise": "^5.1.0",
+    "fs-extra": "^10.0.0",
+    "prettier": "^2.3.2"
   }
 }

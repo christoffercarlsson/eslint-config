@@ -7,7 +7,7 @@ const config = {
     es2020: true
   },
   parserOptions: {
-    ecmaVersion: 10,
+    ecmaVersion: 11,
     sourceType: 'module',
     ecmaFeatures: {
       jsx: true,

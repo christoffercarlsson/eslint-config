@@ -17,13 +17,13 @@
     "eslint": "^7.32.0"
   },
   "devDependencies": {
-    "@christoffercarlsson/prettier-config": "^0.5.1",
+    "@christoffercarlsson/prettier-config": "^0.6.0",
     "eslint-config-prettier": "^8.3.0",
     "eslint-config-standard": "^16.0.3",
     "eslint-plugin-import": "^2.24.0",
     "eslint-plugin-node": "^11.1.0",
     "eslint-plugin-promise": "^5.1.0",
     "fs-extra": "^10.0.0",
-    "prettier": "^2.3.2"
+    "prettier": "^2.4.0"
   }
 }

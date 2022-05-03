@@ -5,9 +5,9 @@ import calculateConfig from '../src/calculate-config.js'
 
 const build = async () => {
   const outputDirectory = resolvePath(cwd(), 'dist')
+  await remove(outputDirectory)
   const filePath = resolvePath(outputDirectory, 'eslintrc.json')
   const data = JSON.stringify(await calculateConfig(), null, 2)
-  await remove(outputDirectory)
   await outputFile(filePath, data)
 }
 

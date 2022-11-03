@@ -1,11 +1,7 @@
-import { normalize as normalizePath } from 'path/posix'
-import { fileURLToPath } from 'url'
-import { ESLint, Linter } from 'eslint'
+const { ESLint, Linter } = require('eslint')
 
-const calculateConfigForThisFile = () => {
-  const filePath = normalizePath(fileURLToPath(import.meta.url))
-  return new ESLint().calculateConfigForFile(filePath)
-}
+const calculateConfigForThisFile = () =>
+  new ESLint().calculateConfigForFile(__filename)
 
 const calculateRules = async () => {
   const { rules: configuredRules } = await calculateConfigForThisFile()
@@ -18,4 +14,4 @@ const calculateRules = async () => {
   }, [])
 }
 
-export default calculateRules
+module.exports = calculateRules

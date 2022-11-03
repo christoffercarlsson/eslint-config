@@ -1,4 +1,4 @@
-import calculateRules from './calculate-rules.js'
+const calculateRules = require('./calculate-rules.js')
 
 const config = {
   env: {
@@ -26,4 +26,4 @@ const calculateConfigFile = async () => {
   return `const config = JSON.parse('${config}')\nmodule.exports = config`
 }
 
-export default calculateConfigFile
+module.exports = calculateConfigFile

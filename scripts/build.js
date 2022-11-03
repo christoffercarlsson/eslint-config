@@ -1,12 +1,12 @@
-import { remove, outputFile } from 'fs-extra'
-import { resolve as resolvePath } from 'path/posix'
-import { cwd, exit } from 'process'
-import calculateConfigFile from '../src/calculate-config.js'
+const { remove, outputFile } = require('fs-extra')
+const { resolve: resolvePath } = require('path/posix')
+const { cwd, exit } = require('process')
+const calculateConfigFile = require('../src/calculate-config.js')
 
 const build = async () => {
   const outputDirectory = resolvePath(cwd(), 'dist')
   await remove(outputDirectory)
-  const filePath = resolvePath(outputDirectory, 'eslintrc.cjs')
+  const filePath = resolvePath(outputDirectory, 'eslintrc.js')
   const data = await calculateConfigFile()
   await outputFile(filePath, data)
 }

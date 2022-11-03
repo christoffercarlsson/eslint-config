@@ -4,10 +4,9 @@
   "description": "My personal ESLint configuration",
   "license": "Unlicense",
   "repository": "git://github.com/christoffercarlsson/eslint-config.git",
-  "type": "module",
-  "exports": "./dist/eslintrc.cjs",
+  "exports": "./dist/eslintrc.js",
   "files": [
-    "dist/eslintrc.cjs"
+    "dist/eslintrc.js"
   ],
   "scripts": {
     "build": "node scripts/build.js",

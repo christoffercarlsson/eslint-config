@@ -1,13 +1,13 @@
 import { remove, outputFile } from 'fs-extra'
 import { resolve as resolvePath } from 'path/posix'
 import { cwd, exit } from 'process'
-import calculateConfig from '../src/calculate-config.js'
+import calculateConfigFile from '../src/calculate-config.js'
 
 const build = async () => {
   const outputDirectory = resolvePath(cwd(), 'dist')
   await remove(outputDirectory)
-  const filePath = resolvePath(outputDirectory, 'eslintrc.json')
-  const data = JSON.stringify(await calculateConfig(), null, 2)
+  const filePath = resolvePath(outputDirectory, 'eslintrc.cjs')
+  const data = await calculateConfigFile()
   await outputFile(filePath, data)
 }
 

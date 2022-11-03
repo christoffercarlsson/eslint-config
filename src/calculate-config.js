@@ -21,4 +21,14 @@ const calculateConfig = async () => ({
   rules: await calculateRules()
 })
 
-export default calculateConfig
+const calculateConfigFile =
+  async () => `const config = JSON.parse(\`${JSON.stringify(
+    await calculateConfig(),
+    null,
+    2
+  )}\`)
+  
+module.exports = config
+`
+
+export default calculateConfigFile
